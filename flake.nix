@@ -16,6 +16,9 @@
         disabledModules = [ "profiles/all-hardware.nix" ];
 
         hardware.nvidia-jetpack.enable = true;
+
+        services.openssh.enable = true;
+        services.openssh.permitRootLogin = "yes";
       };
     in
     {
